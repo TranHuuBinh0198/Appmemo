@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* font-family: FontAwesome, sans-serif; */
+}
+
+@font-face {
+    font-family: 'FuturaPTMedium';
+    font-style: normal;
+    font-weight: normal;
+    src: local("Tangerine"), url("../fonts/FuturaPTMedium.otf") format("truetype");
+  }
+.wrapper {
+    width: 100%;
+    display: flex;
+}
+
+.Menu-right-body{
+    width: 100%;
+
+}

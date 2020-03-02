@@ -1,0 +1,36 @@
+.menu-right-new{
+    margin: 20px;
+}
+
+.menu-right-new h1{
+    text-align: center;
+    color: chocolate;
+}
+
+.menu-right-main-new{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.menu-right-main-new b{
+    color: chocolate;
+}
+
+.menu-right-main-new input{
+    margin-top: 5px;
+    display: flex;
+    padding: 5px;
+    width: 50%;
+    font-size: 14px;
+    border-radius: 15px;
+    border: 1px solid #DCDCDC;
+}
+
+.menu-right-main-new textarea{
+    margin-top: 5px;
+    display: flex;
+    font-size: 14px;
+    width: 80%;
+    height: 100px;
+    padding: 5px;
+}

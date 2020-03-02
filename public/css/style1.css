@@ -1,0 +1,29 @@
+.menu-right-main-new{
+    margin: 20px;
+}
+
+.menu-right-main-new-header-category-name{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.menu-right-main-new-header-category-name input{
+    font-size: 14px;
+    width: 50%;
+    padding: 5px;
+}
+
+.menu-right-main-new-title-input input{
+    margin-top: 20px;
+    font-size: 14px;
+    width: 50%;
+    padding: 5px;
+}
+
+.menu-right-main-new-content-text textarea{
+    margin-top: 20px;
+    font-size: 14px;
+    width: 50%;
+    height: 100px;
+    padding: 5px;
+}
