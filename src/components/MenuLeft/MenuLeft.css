@@ -1,12 +1,21 @@
 .menu-left {
     width: 300px;
-    height: 662px;
+    min-height: calc(110vh - 70px);
     padding: 0px 15px;
     background: #313F46 0% 0% no-repeat padding-box;
     opacity: 1;
 }
 
+.create-link{
+    text-decoration: none;
+}
+
+.create-link :active{
+    background: #d9dfbc;
+}
+
 .create-new {
+    cursor: pointer;
     margin-top: 20px;
     width: 270px;
     height: 50px;
@@ -14,9 +23,14 @@
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border-radius: 50px;
     opacity: 1;
-    /* font-family: Medium 16px/21px Futura PT; */
     letter-spacing: 0;
     align-items: center;
+    outline: none;
+    border: none;
+}
+
+.create-new img{
+    margin-left: 20px;
 }
 
 .create-new span {
@@ -24,6 +38,7 @@
 }
 
 .all-note {
+    cursor: pointer;
     margin-top: 20px;
     width: 270px;
     height: 50px;
@@ -38,8 +53,41 @@
     align-items: center;
 }
 
+.all-link{
+    text-decoration: none;
+}
+.all-link :active{
+    background: #d9dfbc;
+}
+
+.all-note img{
+    margin-left: 20px;
+}
+
 .all-note span {
-    margin-left: 24px;
+    margin-left: 18px;
+}
+
+.clip {
+    cursor: pointer;
+    margin-top: 20px;
+    width: 270px;
+    height: 50px;
+    display: flex;
+    opacity: 1;
+    text-align: left;
+    font: Medium 16px/21px Futura PT;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    align-items: center;
+}
+
+.clip img{
+    margin-left: 20px;
+}
+
+.clip span {
+    margin-left: 18px;
 }
 
 .quantity {
@@ -56,6 +104,7 @@
 }
 
 .category {
+    cursor: pointer;
     margin-top: 19px;
     margin-left: 20px;
     text-align: left;
@@ -81,6 +130,7 @@
 }
 
 .category-item {
+    cursor: pointer;
     margin-top: 20px;
     display: flex;
 }
@@ -89,6 +139,26 @@
     padding-left: 20px;
 }
 
-.category-item .quantity {
-    margin-left: 42px;
+.btn-del{
+    cursor: pointer;
+    margin-left: 80px;
+    bottom: 30px;
+    position: absolute;
+    width: 90px;
+    height: 35px;
+    border-radius: 20px;
+    border: 1px solid #DCDCDC;
+    align-items: center;
+    display: flex;
+}
+
+.btn-del :hover{background: #2B3137;}
+
+.btn-del img{
+    margin-left: 10px;
+}
+
+.btn-del span{
+    margin-left: 2px;
+    color: #FFFFFF;
 }

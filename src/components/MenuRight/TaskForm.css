@@ -17,6 +17,7 @@
 }
 
 .menu-right-main-new input{
+    outline: none;
     margin-top: 5px;
     display: flex;
     padding: 5px;
@@ -27,6 +28,7 @@
 }
 
 .menu-right-main-new textarea{
+    outline: none;
     margin-top: 5px;
     display: flex;
     font-size: 14px;

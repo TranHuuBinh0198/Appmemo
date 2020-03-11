@@ -1,6 +1,6 @@
 .menu-right-header {
     align-items: center;
-    justify-content: center;
+    justify-content:space-between;
     display: flex;
     height: 70px;
     background: #F4F4F4 0% 0% no-repeat padding-box;
@@ -10,6 +10,8 @@
 }
 
 .menu-right-header-btn button{
+    outline: none;
+    cursor: pointer;
     width: 80px;
     height: 40px;
     border-radius: 20px;
@@ -18,6 +20,18 @@
     margin-left: 10px;
     margin-right: 10px;
     font-size: 14px;
+    align-items: center;
+    display: inline-flex;
+}
+.menu-right-header-btn button img{
+    margin-left: 10px;
+}
+
+.menu-right-header-btn :hover{
+    color: #FFFFFF;
+    -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+    background: #313F46;
 }
 
 .menu-right-header-btn-del {
@@ -26,11 +40,18 @@
 }
 
 .menu-right-header-btn-del button{
+    outline: none;
+    cursor: pointer;
     height: 40px;
     width: 90px;
     border-radius: 20px;
     border: 1px solid #DCDCDC;
-    color: #FFFFFF;
-    background: #313F46 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
     font-size: 14px;
+    align-items: center;
+    display: flex;
+}
+
+.menu-right-header-btn-del button img{
+    margin-left: 10px;
 }

@@ -5,16 +5,24 @@ import * as actions from "../../actions/index";
 class MenuRightHeader extends Component {
   constructor(props) {
     super(props)
-
-    this.state = {
-         
+    this.state = {    
     }
   }
 
+  componentWillMount(){
+    this.props.resultCallapiData()
+  }
 
   Save=(data)=>{
+    console.log(this.props.data);
+    
     this.props.saveMemo(data)
   }
+
+  Delete=(data)=>{
+    this.props.Delete(data)
+  }
+
 
   render() {
     return (
@@ -25,7 +33,7 @@ class MenuRightHeader extends Component {
             <button><img src="\img\paperclip-solid.svg" alt="clips" />&nbsp;&nbsp;Clips</button>
           </div>
           <div className="menu-right-header-btn-del">
-            <button><img src="\img\detete.svg" alt="del" />&nbsp;&nbsp;Delete</button>
+            <button onClick={()=>this.Delete}><img src="\img\detete.svg" alt="del" />&nbsp;&nbsp;Delete</button>
           </div>
         </div>
     )
@@ -40,8 +48,14 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
-    saveMemo: (data) => {
-      dispatch(actions.actAddMemo(data))
+    actPushData: () => {
+      dispatch(actions.actPushDataRequest())
+    },
+    saveMemo:(data) =>{
+      dispatch(actions.actPushDataRequest(data))
+    },
+    resultCallapiData:()=>{
+      dispatch(actions.resultCallapiDataRequest())
     }
   }
 }

@@ -1,11 +1,11 @@
 import * as Types from "../Constants/actionType";
 
-var initialState = {};
+var initialState = "";
 const contentCategory = (state = initialState, action) => {
     switch (action.type) {
-        case Types.SAVE_DATA_TO_STORE:
-            state = action.dataSavetamp;
-            return { ...state };
+        case Types.SEARCH:
+            state = action.keyword;
+            return state;
         default:
             return state;
     }

@@ -1,4 +1,4 @@
-.menu-right-main-new{
+/* .menu-right-main-new{
     margin: 20px;
 }
 
@@ -26,4 +26,10 @@
     width: 50%;
     height: 100px;
     padding: 5px;
+} */
+
+@media screen and (max-width: 800px) {
+    .menu-left{
+        
+    }
 }

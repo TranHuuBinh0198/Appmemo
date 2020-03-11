@@ -1,5 +1,5 @@
 import React from "react";
-import EditMenuRight from '../src/components/MenuRight/EditMenuRight';
+import TaskForm from './components/MenuRight/TaskForm';
 
 import MenuRight from '../src/components/MenuRight/MenuRight';
 
@@ -9,12 +9,12 @@ export const routes = [
         path: "/new",
         exact: true,
         main: () => (
-            <EditMenuRight/>
+            <TaskForm/>
         )
     },
     {
         path: "/content",
-        exact: false,
+        exact: true,
         main: () => (
             <MenuRight/>
         )

@@ -1,16 +1,15 @@
 import React, { Component } from "react";
-import "./EditMenuRight.css";
+import "./TaskForm.css";
 import {connect} from "react-redux";
 import * as actions from "../../actions/index";
-class EditMenuRight extends Component {
+class TaskForm extends Component {
   constructor(props) {
     super(props);
-
     this.state = {
-        categoryDate: null,
-        categoryName: "",
-        titleMemo: "",
-        contentMemo: "",
+        Date: null,
+        category: "",
+        title: "",
+        content: "",
     };
   }
 
@@ -25,7 +24,7 @@ class EditMenuRight extends Component {
 };
 
   render() {
-    var { categoryDate, categoryName, titleMemo, contentMemo } = this.state;
+    var { Date, category, title, content } = this.state;
     return (
         <div className="menu-right-new">
             <h1>Add Note</h1>
@@ -34,46 +33,46 @@ class EditMenuRight extends Component {
                     <b>Add Title Note</b>
                     <input
                         type="text"
-                        name="titleMemo"
-                        placeholder="fill in the title"
+                        name="title"
+                        placeholder="Enter a title"
                         onChange={e => {
                             this.handleChange(e);
                         }}
-                        value={titleMemo}
-                        ></input>
+                        value={title || ""}
+                    ></input>
                 </div>
                 <div className="menu-right-main-new">
                     <b>Add Date Note</b>
                     <input
                         type="date"
-                        name="categoryDate"
+                        name="Date"
                         onChange={e => {
                             this.handleChange(e);
                         }}
-                        value={categoryDate}
-                        ></input>
+                        value={Date || ""}
+                    ></input>
                 </div>
                 <div className="menu-right-main-new">
                     <b>Add Category Note</b>
                     <input
                         type="text"
-                        name="categoryName"
-                        placeholder="fill in the category"
+                        name="category"
+                        placeholder="Enter the category"
                         onChange={e => {
                             this.handleChange(e);
                         }}
-                        value={categoryName}
-                        ></input>
+                        value={category || ""}
+                    ></input>
                 </div>
                 <div className="menu-right-main-new">
                     <b>Add Content Note</b>
                     <textarea
                         type="text"
-                        name="contentMemo"
+                        name="content"
                         onChange={e => {
                             this.handleChange(e);
                         }}
-                        value={contentMemo}
+                        value={content || ""}
                         ></textarea>
                 </div>
             </form>
@@ -95,5 +94,5 @@ const mapDispatchToProps = (dispatch, props) => {
     };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(EditMenuRight);
+export default connect(mapStateToProps, mapDispatchToProps)(TaskForm);
 

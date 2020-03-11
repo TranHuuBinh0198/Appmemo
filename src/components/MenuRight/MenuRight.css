@@ -1,43 +1,9 @@
 .menu-right {
     width: 100%;
 }
-
-/* .menu-right-header {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    height: 70px;
-    background: #F4F4F4 0% 0% no-repeat padding-box;
-    border: 1px solid #DCDCDC;
-    border-left: none;
-    opacity: 1;
+.right-link{
+    text-decoration: none;
 }
-
-.menu-right-header-btn button{
-    width: 80px;
-    height: 40px;
-    border-radius: 20px;
-    border: 1px solid #DCDCDC;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    margin-left: 10px;
-    margin-right: 10px;
-    font-size: 14px;
-}
-
-.menu-right-header-btn-del {
-    margin-right: 20px;
-    margin-left: auto;
-}
-
-.menu-right-header-btn-del button{
-    height: 40px;
-    width: 90px;
-    border-radius: 20px;
-    border: 1px solid #DCDCDC;
-    color: #FFFFFF;
-    background: #313F46 0% 0% no-repeat padding-box;
-    font-size: 14px;
-} */
 
 .menu-right-main {
     margin-top: 25px;
