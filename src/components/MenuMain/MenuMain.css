@@ -27,6 +27,7 @@
 }
 
 .search-btn {
+    outline: none;
     cursor: pointer;
     font-size: 17px;
     margin-right: 10px;

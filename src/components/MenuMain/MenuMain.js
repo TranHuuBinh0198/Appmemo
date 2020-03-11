@@ -19,7 +19,7 @@ class MenuMain extends Component {
   }
 
   showTitle = () => {
-    var { keyword } = this.props;
+    // var { keyword } = this.props;
     let rs = [];
     let { data } = this.props;
     // if (keyword) {
